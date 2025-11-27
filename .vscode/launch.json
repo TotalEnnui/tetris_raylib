@@ -1,4 +1,5 @@
 {
+    "version": "0.2.0",
     "configurations": [
         {
             "type": "cmake",
@@ -7,6 +8,15 @@
             "cmakeDebugType": "external",
             "pipeName": "\\\\.\\pipe\\vcpkg_ext_portfile_dbg",
             "preLaunchTask": "Debug vcpkg commands"
+        },
+        {
+            "name": "Run Release Build",
+            "type": "cppvsdbg",   // use "cppdbg" if you prefer gdb/clang
+            "request": "launch",
+            "program": "C:/Users/alp19/Documents/repos/tetris_raylib/build/MSVC-manifest/release/main.exe",
+            "cwd": "C:/Users/alp19/Documents/repos/tetris_raylib",
+            "console": "externalTerminal"
         }
     ]
 }
+
